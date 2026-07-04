@@ -67,11 +67,11 @@
             transform: translateY(-2px);
         }
 
-        .tg-link img {
+        /* ИСПРАВЛЕНО: Селектор изменен на svg, убран сложный фильтр */
+        .tg-link svg {
             width: 20px;
             height: 20px;
-            /* Перекрашивает черную иконку Simple Icons в белый цвет */
-            filter: invert(100%) sepia(0%) saturate(7460%) hue-rotate(61deg) brightness(119%) contrast(119%);
+            fill: currentColor; /* Иконка автоматически красится в цвет текста ссылки (белый) */
         }
     </style>
 </head>
