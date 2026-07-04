@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль Дианы Жидковой</title>
+    <style>
+        :root {
+            --bg-color: #fff0f5;
+            --card-bg: #ffffff;
+            --main-pink: #ff69b4;
+            --hover-pink: #ff1493;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.15);
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+            border: 2px solid rgba(255, 105, 180, 0.2);
+        }
+
+        h1 {
+            color: var(--main-pink);
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .tg-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--main-pink);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .tg-link:hover {
+            background-color: var(--hover-pink);
+            transform: translateY(-2px);
+        }
+
+        .tg-link img {
+            width: 20px;
+            height: 20px;
+            /* Перекрашивает черную иконку Simple Icons в белый цвет */
+            filter: invert(100%) sepia(0%) saturate(7460%) hue-rotate(61deg) brightness(119%) contrast(119%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <h1>Диана Жидкова</h1>
+        <div class="company">RestoPNL</div>
+        <a href="https://t.me" target="_blank" class="tg-link">
+            <img src="https://simpleicons.org" alt="Telegram Icon">
+            @jidkovskaya
+        </a>
+    </div>
+
+</body>
+</html>
